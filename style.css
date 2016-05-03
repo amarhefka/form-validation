@@ -1,0 +1,33 @@
+html {
+  font-size: 150%;
+  font-family: "Arial", sans-serif;
+  padding: 0.5em;
+}
+
+* {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  border: 2px solid;
+}
+
+input:focus {
+  outline: 4px solid;
+}
+
+#feedback {
+  position: absolute;
+  left: -9999px;
+}
+
+input[aria-invalid="true"] {
+  border-color: #c00;
+  outline-color: #c00;
+}
+
+input[aria-invalid="false"] {
+  border-color: #0c0;
+  outline-color: #0c0;
+}
